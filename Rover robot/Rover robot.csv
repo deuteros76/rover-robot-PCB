@@ -1,0 +1,4 @@
+"#","Reference","Qty","Value","Footprint","DNP"
+"1","J1","1","Conn_02x04_Top_Bottom","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical",""
+"2","J2","1","Conn_01x04_Pin","",""
+"3","U1","1","ESP32_DevKit_V1_DOIT","ESP32_DevKit_V1_DOIT:esp32_devkit_v1_doit",""
