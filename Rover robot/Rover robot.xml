@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/home/deuteros/Documentos/Proyectos/Rover robot/Rover robot/Rover robot.kicad_sch</source>
-    <date>sáb 14 oct 2023 22:19:07</date>
-    <tool>Eeschema 7.0.5</tool>
+    <source>/home/deuteros/Documentos/Proyectos/Rover robot/PCB/Rover robot/Rover robot.kicad_sch</source>
+    <date>mar 02 ene 2024 16:57:14</date>
+    <tool>Eeschema 7.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
+        <title>Rober robot PCB for ESP32 DevKit</title>
         <company/>
-        <rev/>
-        <date/>
+        <rev>1.0</rev>
+        <date>2023-10-15</date>
         <source>Rover robot.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -24,28 +24,29 @@
     </sheet>
   </design>
   <components>
-    <comp ref="J1">
-      <value>Conn_02x04_Top_Bottom</value>
-      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
-      <libsource lib="Connector_Generic" part="Conn_02x04_Top_Bottom" description="Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+    <comp ref="3v3_Power1">
+      <value>Conn_02x02_Odd_Even</value>
+      <footprint>ESP32_DevKit_V1_DOIT:esp32_devkit_v1_doit_simplified</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x02_Odd_Even" description="Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Rover robot.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_description" value="Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>0cc2b954-9e42-46ea-b913-8640eabe5264</tstamps>
+      <tstamps>d6eb1ffb-b268-4610-b016-3100de822314</tstamps>
     </comp>
-    <comp ref="J2">
-      <value>Conn_01x04_Pin</value>
-      <libsource lib="Connector" part="Conn_01x04_Pin" description="Generic connector, single row, 01x04, script generated"/>
+    <comp ref="5V_Power1">
+      <value>Conn_02x02_Odd_Even</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x02_Odd_Even" description="Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Rover robot.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x04, script generated"/>
+      <property name="ki_description" value="Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>0c72ccdd-9a36-4211-bbef-663d5bdcb78c</tstamps>
+      <tstamps>8cd8b6f6-6a18-4da1-a824-b2a4bb1fd237</tstamps>
     </comp>
-    <comp ref="U1">
+    <comp ref="ESP32_DevKit_V1_DOIT1">
       <value>ESP32_DevKit_V1_DOIT</value>
       <footprint>ESP32_DevKit_V1_DOIT:esp32_devkit_v1_doit</footprint>
       <datasheet>https://aliexpress.com/item/32864722159.html</datasheet>
@@ -57,8 +58,202 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0917b01c-7519-43c7-ad5d-40e59c253ef7</tstamps>
     </comp>
+    <comp ref="Floor_Detector1">
+      <value>TCRT5000</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f0587a0-99fc-4536-8d9d-5da8a242d576</tstamps>
+    </comp>
+    <comp ref="Floor_Detector2">
+      <value>TCRT5000</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef79cac0-8f8b-4d1b-8581-9ad7f5476c9c</tstamps>
+    </comp>
+    <comp ref="HC_SR4">
+      <value>HC SR04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x04_Pin" description="Generic connector, single row, 01x04, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x04, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d22873d-980e-4fdb-b2a7-ec65ff705bd5</tstamps>
+    </comp>
+    <comp ref="I2C1">
+      <value>I2C</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="" part="Conn_01x04_Pin_1" description="Generic connector, single row, 01x04, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x04, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8fe1d28-b1c2-4e6c-8508-b7753dff04d2</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Serial</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4462841f-1d50-4c60-b39d-29fab8405ba0</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Screw_Terminal_01x02</value>
+      <footprint>TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>32c3cf81-b44b-4962-a374-74835304efcd</tstamps>
+    </comp>
+    <comp ref="L298N1">
+      <value>L298N</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0cc2b954-9e42-46ea-b913-8640eabe5264</tstamps>
+    </comp>
+    <comp ref="Line_Detector1">
+      <value>TCRT5000</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c98b732e-fc4a-40c9-9ec1-ec7630a62f7c</tstamps>
+    </comp>
+    <comp ref="Line_Detector2">
+      <value>TCRT5000</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2628c426-586c-4c12-b4ab-bc75e5979da4</tstamps>
+    </comp>
+    <comp ref="Line_Detector3">
+      <value>TCRT5000</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43f717ce-3e9f-4c12-8359-56e6d5a8fe4b</tstamps>
+    </comp>
+    <comp ref="Servo1">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>085f99a8-ae1c-4fce-ab1d-66aef69eb156</tstamps>
+    </comp>
+    <comp ref="Servo2">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cd4b2a8a-8102-4d1e-bfe8-28cb6a1d6914</tstamps>
+    </comp>
+    <comp ref="Servo3">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Rover robot.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80616a3b-20d2-485e-8860-0a1e637d67e3</tstamps>
+    </comp>
   </components>
   <libparts>
+    <libpart lib="" part="Conn_01x04_Pin_1">
+      <description>Generic connector, single row, 01x04, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Pin">
+      <description>Generic connector, single row, 01x02, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Pin">
+      <description>Generic connector, single row, 01x03, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Connector" part="Conn_01x04_Pin">
       <description>Generic connector, single row, 01x04, script generated</description>
       <docs>~</docs>
@@ -77,15 +272,49 @@
         <pin num="4" name="GND" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Connector_Generic" part="Conn_02x04_Top_Bottom">
-      <description>Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x02_Odd_Even">
+      <description>Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_2x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_02x04_Top_Bottom</field>
+        <field name="Value">Conn_02x02_Odd_Even</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Odd_Even">
+      <description>Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Odd_Even</field>
         <field name="Datasheet">~</field>
       </fields>
       <pins>
@@ -157,107 +386,147 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(J1-Pin_1)">
-      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
-      <node ref="U1" pin="12" pinfunction="IO12" pintype="bidirectional"/>
+    <net code="1" name="+3.3V">
+      <node ref="3v3_Power1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="3v3_Power1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="16" pinfunction="3V3" pintype="power_in"/>
+      <node ref="Floor_Detector1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Floor_Detector2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="I2C1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Line_Detector1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Line_Detector2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Line_Detector3" pin="1" pinfunction="Pin_1" pintype="passive"/>
     </net>
-    <net code="2" name="Net-(J1-Pin_2)">
-      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="U1" pin="13" pinfunction="IO13" pintype="bidirectional"/>
+    <net code="2" name="+5V">
+      <node ref="5V_Power1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="5V_Power1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="15" pinfunction="VIN" pintype="power_in"/>
+      <node ref="HC_SR4" pin="1" pinfunction="5v" pintype="passive"/>
+      <node ref="L298N1" pin="1" pinfunction="Pin_1" pintype="passive"/>
     </net>
-    <net code="3" name="Net-(J1-Pin_3)">
-      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
-      <node ref="U1" pin="11" pinfunction="IO14" pintype="bidirectional"/>
+    <net code="3" name="+9V">
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Servo1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Servo2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Servo3" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="4" name="Net-(J1-Pin_4)">
-      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
-      <node ref="J2" pin="1" pinfunction="5v" pintype="passive"/>
-      <node ref="U1" pin="15" pinfunction="VIN" pintype="power_in"/>
-    </net>
-    <net code="5" name="Net-(J1-Pin_5)">
-      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
-      <node ref="U1" pin="18" pinfunction="IO15" pintype="bidirectional"/>
-    </net>
-    <net code="6" name="Net-(J1-Pin_6)">
-      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
-      <node ref="U1" pin="21" pinfunction="IO16" pintype="bidirectional"/>
-    </net>
-    <net code="7" name="Net-(J1-Pin_7)">
-      <node ref="J1" pin="7" pinfunction="Pin_7" pintype="passive"/>
-      <node ref="U1" pin="22" pinfunction="IO17" pintype="bidirectional"/>
-    </net>
-    <net code="8" name="Net-(J1-Pin_8)">
-      <node ref="J1" pin="8" pinfunction="Pin_8" pintype="passive"/>
-      <node ref="J2" pin="4" pinfunction="GND" pintype="passive"/>
-      <node ref="U1" pin="17" pinfunction="GND" pintype="power_in"/>
-    </net>
-    <net code="9" name="Net-(J2-Pin_2)">
+    <net code="4" name="GND">
+      <node ref="3v3_Power1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="3v3_Power1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="5V_Power1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="5V_Power1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="14" pinfunction="GND" pintype="power_in"/>
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="17" pinfunction="GND" pintype="power_in"/>
+      <node ref="Floor_Detector1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Floor_Detector2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="HC_SR4" pin="4" pinfunction="GND" pintype="passive"/>
+      <node ref="I2C1" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="U1" pin="24" pinfunction="IO18" pintype="bidirectional"/>
+      <node ref="L298N1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Line_Detector1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Line_Detector2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Line_Detector3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Servo1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Servo2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Servo3" pin="1" pinfunction="Pin_1" pintype="passive"/>
     </net>
-    <net code="10" name="Net-(J2-Pin_3)">
-      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
-      <node ref="U1" pin="25" pinfunction="IO19" pintype="bidirectional"/>
+    <net code="5" name="Net-(ESP32_DevKit_V1_DOIT1-IO2)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="19" pinfunction="IO2" pintype="bidirectional"/>
+      <node ref="Floor_Detector1" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="11" name="unconnected-(U1-3V3-Pad16)">
-      <node ref="U1" pin="16" pinfunction="3V3" pintype="power_in"/>
+    <net code="6" name="Net-(ESP32_DevKit_V1_DOIT1-IO4)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="20" pinfunction="IO4" pintype="bidirectional"/>
+      <node ref="L298N1" pin="7" pinfunction="Pin_7" pintype="passive"/>
     </net>
-    <net code="12" name="unconnected-(U1-EN-Pad1)">
-      <node ref="U1" pin="1" pinfunction="EN" pintype="input"/>
+    <net code="7" name="Net-(ESP32_DevKit_V1_DOIT1-IO12)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="12" pinfunction="IO12" pintype="bidirectional"/>
+      <node ref="Floor_Detector2" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="13" name="unconnected-(U1-GND-Pad14)">
-      <node ref="U1" pin="14" pinfunction="GND" pintype="power_in"/>
+    <net code="8" name="Net-(ESP32_DevKit_V1_DOIT1-IO14)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="11" pinfunction="IO14" pintype="bidirectional"/>
+      <node ref="L298N1" pin="5" pinfunction="Pin_5" pintype="passive"/>
     </net>
-    <net code="14" name="unconnected-(U1-IO2-Pad19)">
-      <node ref="U1" pin="19" pinfunction="IO2" pintype="bidirectional"/>
+    <net code="9" name="Net-(ESP32_DevKit_V1_DOIT1-IO15)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="18" pinfunction="IO15" pintype="bidirectional"/>
+      <node ref="L298N1" pin="6" pinfunction="Pin_6" pintype="passive"/>
     </net>
-    <net code="15" name="unconnected-(U1-IO4-Pad20)">
-      <node ref="U1" pin="20" pinfunction="IO4" pintype="bidirectional"/>
+    <net code="10" name="Net-(ESP32_DevKit_V1_DOIT1-IO16)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="21" pinfunction="IO16" pintype="bidirectional"/>
+      <node ref="L298N1" pin="8" pinfunction="Pin_8" pintype="passive"/>
     </net>
-    <net code="16" name="unconnected-(U1-IO5-Pad23)">
-      <node ref="U1" pin="23" pinfunction="IO5" pintype="bidirectional"/>
+    <net code="11" name="Net-(ESP32_DevKit_V1_DOIT1-IO18)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="24" pinfunction="IO18" pintype="bidirectional"/>
+      <node ref="Servo1" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="17" name="unconnected-(U1-IO21-Pad26)">
-      <node ref="U1" pin="26" pinfunction="IO21" pintype="bidirectional"/>
+    <net code="12" name="Net-(ESP32_DevKit_V1_DOIT1-IO19)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="25" pinfunction="IO19" pintype="bidirectional"/>
+      <node ref="HC_SR4" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="18" name="unconnected-(U1-IO22-Pad29)">
-      <node ref="U1" pin="29" pinfunction="IO22" pintype="bidirectional"/>
+    <net code="13" name="Net-(ESP32_DevKit_V1_DOIT1-IO23)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="30" pinfunction="IO23" pintype="bidirectional"/>
+      <node ref="HC_SR4" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="19" name="unconnected-(U1-IO23-Pad30)">
-      <node ref="U1" pin="30" pinfunction="IO23" pintype="bidirectional"/>
+    <net code="14" name="Net-(ESP32_DevKit_V1_DOIT1-IO25)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="8" pinfunction="IO25" pintype="bidirectional"/>
+      <node ref="L298N1" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="20" name="unconnected-(U1-IO25-Pad8)">
-      <node ref="U1" pin="8" pinfunction="IO25" pintype="bidirectional"/>
+    <net code="15" name="Net-(ESP32_DevKit_V1_DOIT1-IO26)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="9" pinfunction="IO26" pintype="bidirectional"/>
+      <node ref="Servo2" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="21" name="unconnected-(U1-IO26-Pad9)">
-      <node ref="U1" pin="9" pinfunction="IO26" pintype="bidirectional"/>
+    <net code="16" name="Net-(ESP32_DevKit_V1_DOIT1-IO27)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="10" pinfunction="IO27" pintype="bidirectional"/>
+      <node ref="Servo3" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="22" name="unconnected-(U1-IO27-Pad10)">
-      <node ref="U1" pin="10" pinfunction="IO27" pintype="bidirectional"/>
+    <net code="17" name="Net-(ESP32_DevKit_V1_DOIT1-IO32)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="6" pinfunction="IO32" pintype="bidirectional"/>
+      <node ref="L298N1" pin="4" pinfunction="Pin_4" pintype="passive"/>
     </net>
-    <net code="23" name="unconnected-(U1-IO32-Pad6)">
-      <node ref="U1" pin="6" pinfunction="IO32" pintype="bidirectional"/>
+    <net code="18" name="Net-(ESP32_DevKit_V1_DOIT1-IO33)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="7" pinfunction="IO33" pintype="bidirectional"/>
+      <node ref="Line_Detector1" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="24" name="unconnected-(U1-IO33-Pad7)">
-      <node ref="U1" pin="7" pinfunction="IO33" pintype="bidirectional"/>
+    <net code="19" name="Net-(ESP32_DevKit_V1_DOIT1-IO34)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="4" pinfunction="IO34" pintype="input"/>
+      <node ref="Line_Detector3" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="25" name="unconnected-(U1-IO34-Pad4)">
-      <node ref="U1" pin="4" pinfunction="IO34" pintype="input"/>
+    <net code="20" name="Net-(ESP32_DevKit_V1_DOIT1-IO35)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="5" pinfunction="IO35" pintype="input"/>
+      <node ref="Line_Detector2" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="26" name="unconnected-(U1-IO35-Pad5)">
-      <node ref="U1" pin="5" pinfunction="IO35" pintype="input"/>
+    <net code="21" name="RX">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="27" pinfunction="RXD0/IO3" pintype="bidirectional"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
     </net>
-    <net code="27" name="unconnected-(U1-RXD0{slash}IO3-Pad27)">
-      <node ref="U1" pin="27" pinfunction="RXD0/IO3" pintype="bidirectional"/>
+    <net code="22" name="SCL">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="29" pinfunction="IO22" pintype="bidirectional"/>
+      <node ref="I2C1" pin="4" pinfunction="Pin_4" pintype="passive"/>
     </net>
-    <net code="28" name="unconnected-(U1-SENSOR_VN-Pad3)">
-      <node ref="U1" pin="3" pinfunction="SENSOR_VN" pintype="input"/>
+    <net code="23" name="SDA">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="26" pinfunction="IO21" pintype="bidirectional"/>
+      <node ref="I2C1" pin="3" pinfunction="Pin_3" pintype="passive"/>
     </net>
-    <net code="29" name="unconnected-(U1-SENSOR_VP-Pad2)">
-      <node ref="U1" pin="2" pinfunction="SENSOR_VP" pintype="input"/>
+    <net code="24" name="TX">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="28" pinfunction="TXD0/IO1" pintype="bidirectional"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
     </net>
-    <net code="30" name="unconnected-(U1-TXD0{slash}IO1-Pad28)">
-      <node ref="U1" pin="28" pinfunction="TXD0/IO1" pintype="bidirectional"/>
+    <net code="25" name="unconnected-(ESP32_DevKit_V1_DOIT1-EN-Pad1)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="1" pinfunction="EN" pintype="input+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(ESP32_DevKit_V1_DOIT1-IO5-Pad23)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="23" pinfunction="IO5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(ESP32_DevKit_V1_DOIT1-IO13-Pad13)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="13" pinfunction="IO13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(ESP32_DevKit_V1_DOIT1-IO17-Pad22)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="22" pinfunction="IO17" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(ESP32_DevKit_V1_DOIT1-SENSOR_VN-Pad3)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="3" pinfunction="SENSOR_VN" pintype="input+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(ESP32_DevKit_V1_DOIT1-SENSOR_VP-Pad2)">
+      <node ref="ESP32_DevKit_V1_DOIT1" pin="2" pinfunction="SENSOR_VP" pintype="input+no_connect"/>
     </net>
   </nets>
 </export>
