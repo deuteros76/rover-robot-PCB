@@ -10,7 +10,7 @@ This is a multipurpose PCB for Arduino projects using ESP32. The main objective 
 
 It could be programmed using PlatformIO, Pictoblox, Arduinoblocks, etc. Then, it can be mounted in a structure made of universal/compatible toy bricks. This makes this board a good option for educational purposes with kids.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dpZD5vXgrrg?si=6dZowQ9yN5Y3cpsI" title="Example board case" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Example board case](https://img.youtube.com/vi/dpZD5vXgrrg/mqdefault.jpg)](https://youtu.be/dpZD5vXgrrg?si=Fezu1EV8ZPVySiNU)
 
 Currently I'm working on a remote controlled vehicle programmed in Pictoblox. I'm constantly modifying the design and you can follow the updates in my X account: 
 
