@@ -5,7 +5,7 @@
 This is a multipurpose PCB for Arduino projects using ESP32. The main objective is to create a board to make robots easily but it can be used also to create different types of DIY projects such as a weather station. 
 
 
-![Rover robot-pcb1](images/Rover robot-pcb1.png)
+![Rover robot-pcb1](images/PCB1.png)
 
 
 It could be programmed using PlatformIO, Pictoblox, Arduinoblocks, etc. Then, it can be mounted in a structure made of universal/compatible toy bricks. This makes this board a good option for educational purposes with kids.
@@ -14,7 +14,7 @@ It could be programmed using PlatformIO, Pictoblox, Arduinoblocks, etc. Then, it
 
 Currently I'm working on a remote controlled vehicle programmed in Pictoblox. I'm constantly modifying the design and you can follow the updates in my X account: 
 
-[![Example board case](images/Prototype 3.jpeg)](https://x.com/deuteros/status/1769453724865282358?s=20)
+[![Example board case](images/Prototype-3.jpeg)](https://x.com/deuteros/status/1769453724865282358?s=20)
 
 ## Future
 
